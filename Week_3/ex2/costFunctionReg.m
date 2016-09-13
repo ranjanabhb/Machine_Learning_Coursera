@@ -17,7 +17,7 @@ grad = zeros(size(theta));
 %               Compute the partial derivatives and set grad to the partial
 %               derivatives of the cost w.r.t. each parameter in theta
 
-[j g] = costFunction(theta, X, y)
+[j g] = costFunction(theta, X, y);
 
 % We want the regularization to exclude the bias feature, so we can set theta(1) to zero. 
 % Since we already calculated h, and theta is a local variable, we can modify theta(1)
